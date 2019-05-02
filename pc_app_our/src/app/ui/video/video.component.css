@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+iframe{
+        z-index: 5;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+}
+.design-main{
+	margin-left: 40%;
+	width: 20%;
+    height: 10px;
+    margin-top: -2.5%;    
+ }
+ .design-main-inside{
+	width:33%; 
+	height:22%; 
+	float: left;
+ }
