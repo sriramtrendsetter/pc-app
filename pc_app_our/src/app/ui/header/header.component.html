@@ -1,0 +1,74 @@
+<!-- Top Banner -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0" >
+  <div class="container">
+
+    <ul class="nav navbar-nav justify-content-start">
+      <li class="nav-item m-1">
+        <a class="nav-link pl-0 text-white" href="#" >
+          <i class="fas fa-mobile-alt"></i> +91-8123870076</a>
+      </li>
+      <li class="nav-item m-1  ">
+        <a class="nav-link text-white" href="#" ><i class="far fa-envelope"></i>
+          contactus@pioneercoders.com</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav justify-content-end">
+      <li class="nav-item m-1 ">
+        <a class="nav-link p-0 text-white" href="#" ><i class="fas fa-map-marker-alt"></i> BTM
+          layout 1stage, Near
+          Gangothri Circle</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<!-- Top Banner -->
+<!-- 2nd Navbar -->
+<!-- Header -->
+<nav class="navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm">
+  <div class="container">
+    <!-- Brand/logo -->
+    <a class="navbar-brand " href="#">
+      <img src="../../../assets/pc-logo.png" alt="logo" class="img-box d-inline-flex mr-auto" width="50px" />
+      <h2 class="title text-secondary d-inline-flex">PioneerCoders</h2>
+    </a>
+    <!-- Hamburger Icon -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown  position-static">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color:#DC3545">Video Tutorial
+          </a>
+
+          <!-- MENU DETAILS -->
+          <div class="dropdown-menu justify-content-center w-100 bg-light" aria-labelledby="navbarDropdown">
+            <div class="container">
+              <div class="row justify-content-around">
+                <div *ngFor="let courseGrop of courseGropList">
+                  <div class="col">
+                    <p><strong class="sub-menu-heading">{{courseGrop.key}}</strong></p>
+                    <p>
+                      <a *ngFor="let course of courseGrop.value" routerLink="/course/{{course.courseId}}/topic/1">
+                        {{course.name}}<br>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="nav-item justify-content-end">
+          <app-signin></app-signin>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
